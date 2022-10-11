@@ -30,7 +30,7 @@ int main() {
 
   std::string season;
   while (1) {
-    cout << "Please enter the time of the year when you were born:"s << endl;
+    cout << "Please enter the time of year when you were born:"s << endl;
     cout << "(pick from 'spring', 'summer', 'autumn', 'winter')" << endl;
     cin >> season;
     if (noun.find(season) == noun.end()) {
