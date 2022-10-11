@@ -24,14 +24,15 @@ int main() {
 
   cout << "Welcome to the fortune teller program!"s << endl;
 
-  cout << "Please enter your name: "s;
+  cout << "Please enter your name:"s << endl;
   std::string name;
   cin >> name;
 
   std::string season;
   while (1) {
     cout
-        << "Please enter the time of the year when you were born (pick from 'spring', 'summer', 'autumn', 'winter'): "s;
+        << "Please enter the time of the year when you were born (pick from 'spring', 'summer', 'autumn', 'winter'):"s
+        << endl;
     cin >> season;
     if (noun.find(season) == noun.end()) {
       cout << "Invalid season value. Please try again. There is no escape!"
@@ -41,10 +42,10 @@ int main() {
     }
   }
 
-  cout << "Please enter an adjective: "s;
+  cout << "Please enter an adjective:"s << endl;
   cin >> adjective[0];
 
-  cout << "Please enter another adjective: "s;
+  cout << "Please enter another adjective:"s << endl;
   cin >> adjective[1];
 
   int adj_index = name.size() % adjective.size();
@@ -55,7 +56,7 @@ int main() {
   int ending_index = name.size() % ending.size();
   // clip out of bounds index value
   ending_index =
-      ending_index > ending.size() - 1 ? ending.size() - 1 : adj_index;
+      ending_index > ending.size() - 1 ? ending.size() - 1 : ending_index;
 
   cout << name + ", "s + adjective[adj_index] + " "s + noun.at(season) +
               " that "s + ending[ending_index]
