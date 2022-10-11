@@ -30,9 +30,8 @@ int main() {
 
   std::string season;
   while (1) {
-    cout
-        << "Please enter the time of the year when you were born (pick from 'spring', 'summer', 'autumn', 'winter'):"s
-        << endl;
+    cout << "Please enter the time of the year when you were born:"s << endl;
+    cout << "(pick from 'spring', 'summer', 'autumn', 'winter')" << endl;
     cin >> season;
     if (noun.find(season) == noun.end()) {
       cout << "Invalid season value. Please try again. There is no escape!"
@@ -58,7 +57,7 @@ int main() {
   ending_index =
       ending_index > ending.size() - 1 ? ending.size() - 1 : ending_index;
 
-  cout << name + ", "s + adjective[adj_index] + " "s + noun.at(season) +
+  cout << name + ", the "s + adjective[adj_index] + " "s + noun.at(season) +
               " that "s + ending[ending_index]
        << endl;
 
