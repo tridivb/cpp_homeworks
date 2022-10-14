@@ -60,6 +60,7 @@ int main() {
   ending_index =
       ending_index > ending.size() - 1 ? ending.size() - 1 : ending_index;
 
+  cout << "Here is your description:" << endl;
   cout << name + ", the "s + adjective[adj_index] + " "s + noun.at(season) +
               " that "s + ending[ending_index]
        << endl;
