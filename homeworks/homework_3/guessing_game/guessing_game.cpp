@@ -36,9 +36,9 @@ int main() {
            << " in "s << no_of_guesses << " guesses!"s << endl;
       break;
     } else if (guess < random_number) {
-      cout << "Your number is too small. Try again!"s << endl;
+      cout << " Your number is too small. Try again!"s << endl;
     } else if (guess > random_number) {
-      cout << "Your number is too big. Try again!"s << endl;
+      cout << " Your number is too big. Try again!"s << endl;
     }
   }
 
