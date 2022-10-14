@@ -42,7 +42,5 @@ int main() {
     }
   }
 
-  cout << random_number << endl;
-
   return 0;
 }
