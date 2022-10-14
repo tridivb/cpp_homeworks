@@ -11,11 +11,11 @@ int main() {
       << "Welcome to the GUESSING GAME!\nI will generate a number and you will guess it!"s
       << endl;
 
-  cout << "Please provide the smallest number:"s << endl;
+  cout << "Please provide the smallest number: "s << endl;
   int smallest = 0;
   cin >> smallest;
 
-  cout << "Please provide the largest number:"s << endl;
+  cout << "Please provide the largest number: "s << endl;
   int largest = 0;
   cin >> largest;
 
@@ -27,7 +27,7 @@ int main() {
   cout << "I've generated a number. Try to guess it!"s << endl;
   int no_of_guesses = 0;
   while (true) {
-    cout << "Please provide the next guess:" << endl;
+    cout << "Please provide the next guess:";
     int guess;
     cin >> guess;
     no_of_guesses++;
