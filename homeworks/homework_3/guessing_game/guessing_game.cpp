@@ -32,7 +32,7 @@ int main() {
     cin >> guess;
     no_of_guesses++;
     if (guess == random_number) {
-      cout << "You've done it! You guessed the number "s << random_number
+      cout << " You've done it! You guessed the number "s << random_number
            << " in "s << no_of_guesses << " guesses!"s << endl;
       break;
     } else if (guess < random_number) {
