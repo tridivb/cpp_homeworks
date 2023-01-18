@@ -1,3 +1,7 @@
+# binary files
+*.out
+*.o
+
 # misc
 .vscode
 tmp
